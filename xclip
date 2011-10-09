@@ -1,0 +1,4 @@
+xclip -o > what-you-have-selected
+xclip -selection c > what-is-in-your-clipboard
+cat ~/.ssh/id_rsa.pub | xclip -selection c
+
