@@ -2,6 +2,6 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
 
 # Default screens
-screen -t s0 0
-screen -t s1 1
-screen -t s2 2
+screen -t s0 1
+screen -t s1 2
+screen -t s2 3
