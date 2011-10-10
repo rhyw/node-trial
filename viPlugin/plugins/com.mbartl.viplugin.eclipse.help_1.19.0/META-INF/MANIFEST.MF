@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ViPluginHelp Plug-in
+Bundle-SymbolicName: com.mbartl.viplugin.eclipse.help;singleton:=true
+Bundle-Version: 1.19.0
+Bundle-Vendor: Michael Bartl
+Bundle-Localization: plugin
+Eclipse-LazyStart: true

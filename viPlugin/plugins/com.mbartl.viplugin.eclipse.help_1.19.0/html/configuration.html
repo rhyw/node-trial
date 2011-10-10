@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" href="book.css" charset="ISO-8859-1" type="text/css">
+	<title>Description</title>
+</head>
+
+<body>
+<h1>Configuration</h1>
+<br>
+The viPlugin can be configured with the viPlugin_rc.xml file which has to be placed in the same directory as the viPlugin.license file.<br>
+<br>
+ Following is a sample xml file to show how configuration can be done:<br>
+<br>
+<pre>&lt;?xml version="1.0"?&gt;
+&lt;xml&gt;
+    &lt;shiftwidth&gt;4&lt;/shiftwidth&gt;
+    &lt;vimcursor&gt;true&lt;/vimcursor&gt;
+    &lt;ignorecase&gt;true&lt;/ignorecase&gt;
+    &lt;expandtab&gt;true&lt;/expandtab&gt;
+    &lt;hlsearch&gt;true&lt;/hlsearch&gt;
+    &lt;incsearch&gt;true&lt;/incsearch&gt;
+    &lt;undolevels&gt;1000&lt;/undolevels&gt;
+	&lt;vim&gt;/usr/bin/gvim&lt;/vim&gt;    
+    &lt;wordseparators&gt;.,(,), ,TAB,ENTER,:,;,?,+,=,ANGLE_BRACKET_RIGHT,ANGLE_BRACKET_LEFT,*,{,},",|,COMMA,-,\,/,@,[,],},~,!,#,$,%,^,',`,´,AND&lt;/wordseparators&gt;
+&lt;/xml&gt;
+</pre>Additionaly the viPlugin implements the following commands (Eclipse Actions) that can be assigned Keybinding via the standard Preferences-&gt;Workbench-&gt;Keys dialog (select KeyConfiguration ViPluginKeyConfiguration and Category ViPlugin):<BR>
+<UL>
+	<LI>SwitchToCommandMode</LI>
+	<LI>AddOneLevelOfIndentation</LI>
+	<LI>EraseOneLevelOfIndentation</LI>
+	<LI>EraseBackOneWord</LI>
+</UL>
+</body>
+</html>

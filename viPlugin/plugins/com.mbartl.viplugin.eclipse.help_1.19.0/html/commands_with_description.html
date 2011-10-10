@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" href="book.css" charset="ISO-8859-1" type="text/css">
+	<title>Description</title>
+</head>
+
+<body>
+<h1>Commands with description</h1>
+<br>
+Following is a short description of implemented commands. For more information have a look at the vim documentation at <a
+ href="http://www.vim.org">http://www.vim.org</a>.<br>
+<br>
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">Command<br>
+      </td>
+      <td style="vertical-align: top;">Description<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">ESC</td>
+      <td style="vertical-align: top;">in insertMode: switch to command mode<br>
+ in CommandMode: delete CommandBuffer</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">i,a,I,A<br>
+      </td>
+      <td style="vertical-align: top;">switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">s</td>
+      <td style="vertical-align: top;"> delete current character and switch to Insert Mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">o<br>
+      </td>
+      <td style="vertical-align: top;">add a new line after the current line and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">O</td>
+      <td style="vertical-align: top;">add a new line before the current line and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">$</td>
+      <td style="vertical-align: top;">move to the end of the line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">0</td>
+      <td style="vertical-align: top;"> move the the beginning of the line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">yy</td>
+      <td style="vertical-align: top;"> yank (copy) current line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">y</td>
+      <td style="vertical-align: top;"> yank (copy) selected text to default buffer (clipboard)<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">"ay<br>
+      </td>
+      <td style="vertical-align: top;"> yank (copy) selected text to buffer a</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">p</td>
+      <td style="vertical-align: top;"> paste text in default buffer</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">"ap<br>
+      </td>
+      <td style="vertical-align: top;"> paste text in buffer a<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">dd</td>
+      <td style="vertical-align: top;"> Delete current line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">dk, d(Up Arrow)<br>
+      </td>
+      <td style="vertical-align: top;"> delete current line and the line above</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">dj, d(Down Arrow)</td>
+      <td style="vertical-align: top;"> delete current line and the line below</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">dw</td>
+      <td style="vertical-align: top;"> Delete word</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">d$</td>
+      <td style="vertical-align: top;"> Delete to the end of the line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">d0</td>
+      <td style="vertical-align: top;"> Delete to the beginning of the line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">cc,S</td>
+      <td style="vertical-align: top;"> Delete current line and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">cw</td>
+      <td style="vertical-align: top;"> Delete to the end of the word and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">c$</td>
+      <td style="vertical-align: top;"> Delete to the end of the line and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">c0</td>
+      <td style="vertical-align: top;"> Delete to the beginning of the line and switch to insert mode</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">gg</td>
+      <td style="vertical-align: top;"> Go to the first line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">G<br>
+      </td>
+      <td style="vertical-align: top;"> Go to the last line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">&lt;n&gt;G</td>
+      <td style="vertical-align: top;"> Go to the &lt;n&gt;-th line</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">/xxx</td>
+      <td style="vertical-align: top;"> search for xxx</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">*</td>
+      <td style="vertical-align: top;"> search for word under cursor</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">#</td>
+      <td style="vertical-align: top;"> search for word under cursor backwards</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">n</td>
+      <td style="vertical-align: top;"> search again with the last search string</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">N</td>
+      <td style="vertical-align: top;"> search backwards with the last search string</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">x</td>
+      <td style="vertical-align: top;"> delete current character</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:w</td>
+      <td style="vertical-align: top;"> Save file</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:wq</td>
+      <td style="vertical-align: top;"> Save file and close editor</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:q</td>
+      <td style="vertical-align: top;"> Close editor without saving</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:&lt;nr&gt;</td>
+      <td style="vertical-align: top;"> go to line number &lt;nr&gt;</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">hjkl</td>
+      <td style="vertical-align: top;"> movement keys</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w</td>
+      <td style="vertical-align: top;"> move one word forward</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">b</td>
+      <td style="vertical-align: top;"> move one word backward</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">.</td>
+      <td style="vertical-align: top;"> repeat last command</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">:u<br>
+      </td>
+      <td style="vertical-align: top;">Undo last change<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">u<br>
+      </td>
+      <td style="vertical-align: top;">Undo last change<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">CTRL-R, Z</td>
+      <td style="vertical-align: top;">Redo last undo<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">&lt;&lt;<br>
+      </td>
+      <td style="vertical-align: top;">Shift line left<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">&gt;&gt;<br>
+      </td>
+      <td style="vertical-align: top;">Shift line right<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="viPlugin Help Center">
+	<topic label="Installation"  href="html/installation.html" />  
+	<topic label="Activation"  href="html/activation.html" />
+	<topic label="Configuration"  href="html/configuration.html" />
+	<topic label="Commands with Description"  href="html/commands_with_description.html" />
+	<topic label="All Commands"  href="html/all_commands.html" />
+	<topic label="Credits"  href="html/credits.html" />	
+</toc>
