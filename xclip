@@ -1,4 +1,12 @@
+# Save what you've selected into file
 xclip -o > what-you-have-selected
+
+# Move what you've selected into clipboard
+xclip -o | xclip -selection c
+
+# Save contents from your clipboard into file
 xclip -selection c > what-is-in-your-clipboard
-cat ~/.ssh/id_rsa.pub | xclip -selection c
+
+# Move contents into [clipboard]
+cat ~/.ssh/id_rsa.pub | xclip [-selection c]
 
