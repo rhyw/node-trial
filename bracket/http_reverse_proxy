@@ -1,0 +1,14 @@
+<VirtualHost *>
+  ServerName dhcp-8-179.nay.redhat.com
+
+  ProxyRequests Off
+  ProxyVia Off
+  ProxyPreserveHost On
+
+  <Proxy *>
+        Order deny,allow
+        Allow from all
+  </Proxy>
+
+  ProxyPass /gerrit/ http://127.0.0.1:8080/gerrit/
+</VirtualHost>
