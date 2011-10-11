@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+   id="com.mbartl.viplugin.eclipse.layer"
+   name="Vi Plug-in"
+   version="1.19.0"
+   provider-name="Michael Bartl"
+   class="com.mbartl.viplugineclipse.ViPluginPlugin">
+
+   <runtime>
+      <library name="ViPluginEclipseLayer.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+      <library name="lib/commons-lang-2.1.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+      <library name="lib/jakarta-regexp-1.4.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+      <library name="lib/nanoxml-lite-2.2.3.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+      <library name="lib/ViImplementation.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+      <library name="lib/ViPluginLicenseChecker.jar">
+         <export
+               name="*">
+         </export>
+      </library>
+   </runtime>
+
+   <requires>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.expressions"/>
+   </requires>
+   
+
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="viPlugin"
+            description="Vi actions"
+            visible="true"
+            id="viPlugin.actionSet">
+         <action
+               accelerator="CTRL+Alt+V"
+               class="com.mbartl.viplugineclipse.LoadViAction"
+               icon="icons/vi.gif"
+               id="com.mbartl.viplugineclipse.LoadViAction"
+               label="&amp;Emulate vi"
+               menubarPath="edit/additions"
+               state="false"
+               style="toggle"
+               toolbarPath="org.eclipse.ui.actionSet.presentation/Presentation"
+               tooltip="Emulate vi">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.ui.resourcePerspective">
+         <actionSet
+               id="viPlugin.actionSet">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <keyConfiguration
+            name="ViPlugin"
+            description="Vi-Style Keybinding"
+            parentId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            id="ViPluginKeyConfiguration">
+      </keyConfiguration>
+      <category
+            name="ViPlugin"
+            description="ViPlugin"
+            id="ViPluginEclipseLayer.ViPlugin">
+      </category>
+      <command
+            category="ViPluginEclipseLayer.ViPlugin"
+            categoryId="ViPluginEclipseLayer.ViPlugin"
+            description="Switch to Command Mode"
+            id="com.mbartl.viplugineclipse.actions.SwitchToCommandMode"
+            name="Switch to Command Mode">
+      </command>
+      <command
+            name="Erase one Level of Indentation"
+            description="Erase one Level of Indentation"
+            category="ViPluginEclipseLayer.ViPlugin"
+            categoryId="ViPluginEclipseLayer.ViPlugin"
+            id="com.mbartl.viplugineclipse.actions.EraseOneLevelOfIndentation">
+      </command>
+      <command
+            name="Erase Back Word"
+            description="Erase one word backwards"
+            category="ViPluginEclipseLayer.ViPlugin"
+            categoryId="ViPluginEclipseLayer.ViPlugin"
+            id="com.mbartl.viplugineclipse.actions.EraseBackOneWord">
+      </command>
+      <command
+            name="Add one Level of Indentation"
+            description="Add one Level of Indentation"
+            category="ViPluginEclipseLayer.ViPlugin"
+            categoryId="ViPluginEclipseLayer.ViPlugin"
+            id="com.mbartl.viplugineclipse.actions.AddOneLevelOfIndentation">
+      </command>
+	  <command
+            category="ViPluginEclipseLayer.ViPlugin"
+            categoryId="ViPluginEclipseLayer.ViPlugin"
+            description="Paste Clipboard to Search Field"
+            id="com.mbartl.viplugineclipse.actions.PasteToSearchCommand"
+            name="Paste Clipboard to Search Field">
+      </command>
+      <keyBinding
+            string="CTRL+U"
+            scope="org.eclipse.ui.textEditorScope"
+            command="org.eclipse.ui.edit.text.goto.pageUp"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            string="CTRL+E"
+            scope="org.eclipse.ui.textEditorScope"
+            command="org.eclipse.ui.edit.text.scroll.lineDown"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            command="org.eclipse.ui.edit.text.scroll.lineUp"
+            configuration="ViPluginKeyConfiguration"
+            scope="org.eclipse.ui.textEditorScope"
+            string="CTRL+Y">
+      </keyBinding>
+      <keyBinding
+            string="CTRL+F"
+            scope="org.eclipse.ui.textEditorScope"
+            command="org.eclipse.ui.edit.text.goto.pageDown"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            string="CTRL+B"
+            scope="org.eclipse.ui.textEditorScope"
+            command="org.eclipse.ui.edit.text.goto.pageUp"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            commandId="com.mbartl.viplugineclipse.actions.SwitchToCommandMode"
+            contextId="org.eclipse.ui.textEditorScope"
+            string="CTRL+C"
+            scope="org.eclipse.ui.textEditorScope"
+            keySequence="CTRL+C"
+            command="com.mbartl.viplugineclipse.actions.SwitchToCommandMode"
+            keyConfigurationId="ViPluginKeyConfiguration"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            commandId="org.eclipse.ui.edit.redo"
+            contextId="org.eclipse.ui.globalScope"
+            string="CTRL+R"
+            scope="org.eclipse.ui.globalScope"
+            keySequence="CTRL+R"
+            command="org.eclipse.ui.edit.redo"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            commandId="com.mbartl.viplugineclipse.actions.EraseBackOneWord"
+            contextId="org.eclipse.ui.textEditorScope"
+            string="CTRL+W"
+            scope="org.eclipse.ui.textEditorScope"
+            keySequence="CTRL+W"
+            command="com.mbartl.viplugineclipse.actions.EraseBackOneWord"
+            keyConfigurationId="ViPluginKeyConfiguration"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            commandId="com.mbartl.viplugineclipse.actions.EraseOneLevelOfIndentation"
+            contextId="org.eclipse.ui.textEditorScope"
+            string="CTRL+D"
+            scope="org.eclipse.ui.textEditorScope"
+            keySequence="CTRL+D"
+            command="com.mbartl.viplugineclipse.actions.EraseOneLevelOfIndentation"
+            keyConfigurationId="ViPluginKeyConfiguration"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            commandId="com.mbartl.viplugineclipse.actions.AddOneLevelOfIndentation"
+            contextId="org.eclipse.ui.textEditorScope"
+            string="CTRL+T"
+            scope="org.eclipse.ui.textEditorScope"
+            keySequence="CTRL+T"
+            command="com.mbartl.viplugineclipse.actions.AddOneLevelOfIndentation"
+            keyConfigurationId="ViPluginKeyConfiguration"
+            configuration="ViPluginKeyConfiguration">
+      </keyBinding>
+      <keyBinding
+            command="com.mbartl.viplugineclipse.actions.PasteToSearchCommand"
+            commandId="com.mbartl.viplugineclipse.actions.PasteToSearchCommand"
+            configuration="ViPluginKeyconfiguration"
+            contextId="org.eclipse.ui.textEditorScope"
+            keyConfigurationId="ViPluginKeyConfiguration"
+            keySequence="CTRL+V"
+            scope="org.eclipse.ui.textEditorScope"
+            string="CTRL+V">
+      </keyBinding>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="com.mbartl.viplugineclipse.ViActivationTester"
+            id="ViPluginEclipseLayer.ViActivationTester"
+            namespace="vi"
+            properties="enabled"
+            type="org.eclipse.ui.IWorkbenchWindow">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup class="com.mbartl.viplugineclipse.LoadOnStartup"/>
+   </extension>
+</plugin>

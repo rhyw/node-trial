@@ -1,0 +1,86 @@
+License Agreement
+
+Please read the following license carefully:
+
+This is a legal agreement between you, the end user, and Michael Bartl.
+viPlugin (the "Software") is owned by Michael Bartl and is protected by copyright
+law. Upon acceptance of the terms of this License Agreement, your rights and
+obligations with respect to use of the Software are as follows.
+
+These rights are in supplement of international copyright law and the
+requirements of local laws and treaties.
+
+Michael Bartl grants you a non-exclusive, nontransferable license to use one
+copy of the enclosed viPlugin Software program on multiple computers for your
+personal use on the understanding that a single person uses each licensed copy.
+Purchasers of the Software are therefore licensed to use it themselves on
+multiple computer at a time, and to make a single backup copy for their own
+use. No other license is given. In particular, The Software may not be installed
+on a computer network for use by more than one person unless a valid license is
+acquired for each person who will use the Software over the network. The
+Software may not be rented or leased to others, and the conditions of this sale
+apply to the purchaser in any resale.
+
+
+COPYRIGHT.
+
+The Software and Documentation are copyrighted by Michael Bartl and are
+protected by international copyright laws. The product contains copyrighted
+software of Michael Bartl. All rights reserved. You agree not to remove any
+trademarks or copyright notices from the Software or Documentation.
+
+OTHER RESTRICTIONS. 
+
+You may not disclose, publish, translate, rent, lease, transfer, export or
+otherwise make the Software available in any form, to any person or entity,
+except as expressly licensed herein. You may not reverse engineer, decompile
+or disassemble the Software.
+
+SOFTWARE SOURCE CODE.
+
+You are allowed to modify the source code for your own use, but you are not
+allowed to give, rent or sell the source code or any compilation of it to any
+third party.
+
+RUNTIME RIGHTS AND LIMITATIONS.
+
+You (a) cannot use Michael Bartl or related names, logos or trademarks to
+market your software without express written permission; and (b) agree to
+indemnify, hold harmless and defend Michael Bartl from and against any claims
+or lawsuits, including attorneys' fees, that arise or result from the use or
+distribution of your software. The license in this section is royalty-free
+provided that your software application product is created using the Software.
+Please contact Michael Bartl for the applicable licensing terms for all other
+uses and/or distribution.
+
+IN NO EVENT SHALL MICHAEL BARTL BE LIABLE FOR ANY LOSS OF PROFIT OR ANY OTHER
+DAMAGE, INCLUDING BUT NOT LIMITED TO SPECIAL, INCIDENTAL, CONSEQUENTIAL OR
+OTHER DAMAGES. THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+MICHAEL BARTL SPECIFICALLY DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED,
+INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY OR
+FITNESS FOR A PARTICULAR USE.
+
+MICHAEL BARTL DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS
+OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
+
+GOVERNING LAW.
+
+This Agreement shall be governed by the laws of Austria, without regard to
+conflict of laws principles. This Agreement may only be modified by a written
+document signed by the party or parties to be bound. Except as may be
+specified in such a written agreement, this is the entire agreement between
+you and Michael Bartl and all other terms are rejected. You agree not to use,
+ship, or export the Software in violation of law.
+
+ENTIRE AGREEMENT.
+
+You agree that this Agreement expresses the entire understanding between you
+and Michael Bartl, and supersedes all other communications, oral or written,
+relating to the Software.
+
+COPYRIGHT 2004-2009  MICHAEL BARTL
+
+MANUFACTURER: 
+Michael Bartl
+Strauchgasse 6 
+Moosbrunn, 2440 Austria

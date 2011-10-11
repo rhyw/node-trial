@@ -1,0 +1,620 @@
+viPlugin 1.18.0
+===============
+
+- 0000612: [vim_compatibility] add text object selection commands like i( a[ i" ...
+- 0000294: [vim_compatibility] Support using <enter> on commands, for example y6<enter> 
+- 0000613: [vim_compatibility] Putting an unused register puts "null"
+- 0000581: [eclipse_integration] viPlugin should read the Eclipse Bookmarks on startup (Martin Schuerrer)
+- 0000528: [vim_compatibility] Marks not updated after text insert/delete
+- 0000574: [editor_integration] Moving down wraps at the last line of the line back to the top
+
+viPlugin 1.17.0
+===============
+
+- 0000311: [Other] Add text object motion commands to operators, esp yank
+- 0000203: [vim_compatibility] Word selection is inconsistent.
+- 0000606: [editor_integration] cw issue
+- 0000605: [vim_compatibility] d{linenumber}gg ignores linenumber
+- 0000580: [eclipse_integration] new status bar for command editing loses focus when tab is pressed instead of inserting a tab
+- 0000582: [eclipse_integration] New status bar 'CommandMode' does not work with multiple Eclipse windows
+- 0000555: [eclipse_integration] missing slashes in :%s replace causes NPE and seize-up
+- 0000601: [eclipse_integration] In dual-window instance, <esc>: sequence can place focus on the wrong window
+- 0000603: [vim_compatibility] :version does nothing
+- 0000592: [eclipse_integration] viStatusTrimWidget causes SWTException
+
+viPlugin 1.16.1
+===============
+
+- 0000578: [eclipse_integration] CommandMode text box height too low and clips text on OS X 10.5.5
+
+
+viPlugin 1.16.0
+===============
+
+- 0000403: [editor_integration] would be nice to be able to use ctrl-v to paste clipboard when on search
+- 0000134: [eclipse_integration] editing a command or search in command mode
+- 0000216: [Other] vim status bar
+- 0000566: [Other] :vim tries to open gvim.exe on linux
+- 0000567: [eclipse_integration] Feature request - enhancements to :vim command
+- 0000570: [vim_compatibility] Choose delimiter for search and replace function
+
+viPlugin 1.15.4
+===============
+
+- 0000498: [vim_compatibility] The undo command doesn't behave like a VI editor should
+- 0000507: [editor_integration] Undo "u" stops working correctly using the WTP XML editor
+- 0000500: [vim_compatibility] when breaking a line Ctrl-T/Ctrl-D affects the line above the current line
+- 0000506: [eclipse_integration] Make vi selection the Eclipse selection for Refactor => Extract Method (Alt-Shift-M)
+- 0000502: [eclipse_integration] Make vi selection the Eclipse selection for "format" (Ctrl-Shift-F), too
+- 0000503: [editor_integration] since updating to this version [CTRL]/ is broken
+- 0000512: [Other] Comment line ([ctrl]/) comments wrong line
+
+viPlugin 1.15.3
+===============
+
+- Fixed "The chosen operation is not currently available" bug (happend in Eclipse 3.1 and 3.0)
+- Improved the undo behaviour in 3.3 and 3.4Mx
+
+viPlugin 1.15.2
+===============
+
+- 0000329: [eclipse_integration] Visual mode selection doesn't allow a) auto-indentation using Ctrl-I and b) toggle commenting using Ctrl-/. (MBartl)
+- 0000266: [Other] With the new highlight feature, ctrl-I doesn't work (MBartl)
+- 0000445: [Other] Poor operation when repeating commands (MBartl)
+- 0000393: [eclipse_integration] viPlugin will not load after installing Maven2 eclipse plugin (MBartl)
+- 0000435: [Other] installed viPlugin, and it was working, but now can't get it back... (MBartl)
+- 0000439: [Other] viplugin not load .... (MBartl)
+- 0000388: [eclipse_integration] Vi-Plugin doesn't load after installation of epic (perl integration plugin) and switch to perl view (MBartl)
+- 0000408: [vim_compatibility] Add support for vim 'smartcase' setting (MBartl)
+- 0000396: [vim_compatibility] Copy/Move range doesn't work (MBartl)
+
+viPlugin 1.15.1
+===============
+
+- Works with a JRE < 5.0 again
+
+viPlugin 1.15.0
+===============
+
+- 0000114: [Other] add an update site for viPlugin (MBartl)
+- 0000416: [editor_integration] "l" (ell) moves wrongly (MBartl)
+- 0000458: [vim_compatibility] support :red[o] in command buffer (MBartl)
+- 0000357: [vim_compatibility] o and O behaviour swaps on empty but indented line (MBartl)
+- 0000368: [vim_compatibility] yank text, then visual select, and paste over text does not do a replace (MBartl)
+- 0000363: [vim_compatibility] Delete to line number does not work correctly. (MBartl)
+- 0000472: [vim_compatibility] gI (g, uppercase I) does not start inserting at beginning of line (MBartl)
+- 0000260: [vim_compatibility] :s/xyz/... should make case sensitive search and replace (MBartl)
+- 0000463: [Other] goto line number x - x gg (MBartl)
+- 0000222: [Other] Cannot get << or >> to shift by shiftwidth setting, shifts by tab (MBartl)
+
+viPlugin 1.14.0
+===============
+
+- Integrated viPlugin Help into Eclipse documentation
+- 0000422: [vim_compatibility] Indenting with >G doesn't work
+- 0000225: [vim_compatibility] No confirmation option on search and replace
+- 0000151: [vim_compatibility] Implement ` (backtick) wrt marks
+- 0000441: [eclipse_integration] Using 'u' to undo after using eclipse's refactoring tools causes an exception, and strange results
+
+viPlugin 1.13.6
+===============
+
+2006-06-21
+
+- 0000334: [Other] search <text> with paren '(' only finds first occurrence in file
+- 0000428: [vim_compatibility] Searching on parens doesn't repeat
+- 0000317: [vim_compatibility] / command doesn't stay on not finding, not case sensitive
+- 0000177: [vim_compatibility] "." (repeat) broken in certain cases
+- 0000427: [Other] Visual model selection not un-highlighting when the cursor moves back
+- 0000425: [Other] visual mode selection doesnt not un-highlight after yank or delete
+
+viPlugin 1.13.5
+===============
+
+2006-06-01
+
+- 0000423: [eclipse_integration] command using "% s" does not work
+- 0000177: [vim_compatibility] "." (repeat) broken in certain cases
+- 0000323: [Other] performance bad while using visual blocking
+- 0000412: [Other] Plugin no longer auto-loads when eclipse is started
+- 0000418: [eclipse_integration] Severe performance degradation in large files from 1.13.2 -> 1.13.3
+
+viPlugin 1.13.4
+===============
+
+2006-05-09
+
+- 0000178: [vim_compatibility] [y]ank with search-to broken
+- 0000267: [Other] global replace error
+- 0000233: [vim_compatibility] can't escape special characters in replace
+- 0000296: [vim_compatibility] Should support "History Search" similar to vim
+- 0000402: [editor_integration] Want vi mappings to work on .class files (attached source)
+- 0000417: [vim_compatibility] indentation using ==
+- 0000407: [vim_compatibility] Cannot use slash char in substitute command
+- 0000410: [editor_integration] Delete to paren broken: d/)
+- 0000411: [vim_compatibility] search/replace of backslahes not working
+- 0000419: [Other] Regex substitutions do not work
+- 0000261: [vim_compatibility] * and # don't work on words with _ in them
+
+viPlugin 1.13.3
+===============
+
+- changed nagging to 3 Minutes
+- 0000370: [Other] add z command
+- 0000147: [Other] problems with pasting at last line in editor
+- 0000309: [Other] Files don't have newline at EOF
+- 0000235: [Other] ^M isn't interpreted as a newline
+- 0000395: [Other] command not working, 'x, 'y d, or , $ d
+- 0000401: [editor_integration] ESC does not always exit edit mode and cursor is on first column
+- 0000355: [editor_integration] Can't get out of insert mode as soon as I hit the enter key
+- 0000125: [eclipse_integration] Loading viPlugin clears the undo history
+
+viPlugin 1.13.2
+===============
+
+2006-01-26
+
+	* implemented :set number, :set nonumber
+	* fixed mantis bug #394: cc and S don't place cursor at current indentation level
+	* fixed mantis bug #384: Specifying delete between marks throws exception 
+	* fixed mantis bug #376: Range commands should allow whitespace between the range and command
+	* fixed mantis bug #375: Copy/delete between marks
+	* fixed mantis bug #364: Colon commands not shown in visual mode
+	* fixed mantis bug #354: plugin is reloaded each time different file is selected
+	* fixed mantis bug #344: q ends recording in insert mode
+	* fixed mantis bug #339: Cannot bind to an undefined command Warning at startup 
+	* fixed mantis bug #321: No feedback when vi mode is activated on startup
+	* changed nagging to 1 minute instead of 30 seconds
+
+viPlugin 1.13.1
+===============
+
+2005-11-12
+
+	* Updated to Jakarta RegExp 1.4
+	* fixed mantis bug #371: behaves oddly after NullPointerException's in .log
+	* fixed mantis bug #366: Weird behavior at end of files
+	* fixed mantis bug #340: java.lang.NullPointerException and Unhandled event loop exception
+
+viPlugin 1.13.0
+===============
+
+2005-10-18
+
+	* fixed mantis bug #367: Problems in Eclipse 3.1.1 
+	* fixed mantis bug #365: Cannot bind SwitchToCommandMode (ViPluginKeyConfiguration)
+
+viPlugin 1.12.3
+===============
+
+2005-09-16
+
+	* fixed a bug: r[ENTER] doesn't use the platform specific delimiter
+	* fixed mantis bug #358: Yank with a range doesn't work (e.g. :.,24y)
+	* fixed mantis bug #356: Bookmarks not visually shown until file reload
+	* fixed mantis bug #353: Broken save functionality with MyEclipse JSP, CSS and XML editor
+	* fixed mantis bug #350: ZZ and ZQ do not work anymore
+	* fixed mantis bug #348: Would like the t command in the range commands
+	* fixed mantis bug #345: undo command doesn't work in MyEclipse editors
+	* fixed mantis bug #337: unable to use quantity modify with macros (e.g. 3@a)
+    * fixed mantis bug #239: editing XML files with WSAD throws exceptions 
+
+viPlugin 1.12.2
+===============
+
+2005-08-01
+    
+    * implemented macro support
+    * fixed mantis bug #327: cw, cW and s don't back up the cursor after returning to command mode 
+    * fixed mantis bug #326: Wrong visual selection (v,V) when moving over folded regions
+    * fixed mantis bug #310: Search highlights don't move with the text
+    * fixed mantis bug #204: o and O work inconsistently depending on line content
+
+viPlugin 1.12.1
+===============
+
+2005-07-03
+
+	* implemented "load viPlugin on startup". Activate in Preferences->Workbench->Startup and Shutdown
+	* implemented markers in range commands
+	* added viPlugin_rc.xml option copytoclipboard to always copy the default buffer to the clipboard
+	* fixed a bug that allowed changing read-only documents
+	* fixed mantis bug #308: Pasting buffer into new empty file produces doubled content
+	* fixed mantis bug #307: backspace during repace "R" does not get replayed when "." is used
+	* fixed mantis bug #244: a VIM style "Ayy would be nice (appending to text buffer)
+	* fixed mantis bug #212: expandtab doesn't work always
+
+viPlugin 1.12.0
+===============
+
+2005-06-05
+
+	* implemented simple range commands e.g. :.,+1d :.,$s/foo/bar/g :1,2c
+	* fixed some issues with search and visual highlighting
+    * fixed mantis bug #299: 'o' and 'O' leave extra "create newline" operation on the history stack 
+    * fixed mantis bug #289: "." does not work correctly with visual highlighting then delete "x"
+	* fixed mantis bug #287: / does not repeat last search
+	* fixed mantis bug #257: ve command does not highlight to the end of the word
+
+viPlugin 1.11.0
+===============
+
+2005-03-31
+
+	* license key and configuration file are now searched for in eclipse and workspace path
+  	* implemented zt/zb to move the current line to top/bottom
+	* fixed mantis bug #285: . does not always repeat last text-change command (e.g R)
+	* fixed mantis bug #283: :N does not work
+	* fixed mantis bug #281: Change command overwrites clipboard
+	* fixed mantis bug #276: "." command only inserts one x when used after the "4Ix"
+	* fixed mantis bug #274: [count]C ignores [count]
+	* fixed mantis bug #272: :$ doesn't jump to last line
+	* fixed mantis bug #190: Map "* register to the window system clipboard
+
+viPlugin 1.10.6
+===============
+
+2005-01-13
+
+	* fixed mantis bug #252: % no longer matches parentheses in v1.10.5 
+	* fixed mantis bug #251: Highlighting rows with V and shift doesn't work as expected
+	* fixed mantis bug #189: Using v to select doesn't include character under cursor
+	* fixed mantis bug #174: line-oriented visual mode invoked by V isn't fully line-oriented
+
+viPlugin 1.10.5
+===============
+
+2005-01-08
+
+	* implemented support for Regular Expressions even with JDK 1.3
+	* fixed nasty bug introduced in 1.10.4 that prevented some simple commands from working e.g. :% shifts lines
+
+viPlugin 1.10.4
+===============
+
+2005-01-07
+
+	* updated User Manual to v1.5
+	* fixed highlighting of words selected via * or # (was showing too many matches in certain cases)
+	* implemented Eclipse action AddOneLevelOfIndentation, EraseBackOneWord, EraseOneLevelOfIndentation and SwitchToCommandMode
+	* fixed mantis bug #250: CTRL+f and CTRL+b no longer work 
+	* fixed mantis bug #246: CTRL+e and CTRL+y don't scroll
+	* fixed mantis bug #243: >j >k <j <k doesn't work
+	* fixed mantis bug #240: Cannot exit insert mode with CTRL+c
+	* fixed mantis bug #170: CTRL+w doesn't work
+	* fixed mantis bug #142: CTRL+d during insert mode does pageDown instead of unindent
+
+viPlugin 1.10.3
+===============
+
+2004-12-30
+
+	* fixed S in visual mode: removes all lines of the selection now
+	* fixed mantis bug #238: C incorrectly moves one cursor to the left 
+	* fixed mantis bug #237: s or c multiply the changes when used with visual selection 
+	* fixed mantis bug #226: w doesn't skip over spaces/TAB combination properly
+	* fixed mantis bug #220 again: Word boundary definition around _ is wrong 
+	* fixed mantis bug #196: Search and replace misses every second occurrence in a word 
+	
+viPlugin 1.10.2
+===============	
+	
+2004-12-23
+
+	* implemented :wa (Save All)
+  	* implemented vi indenting via == (only in Java and for single lines yet)
+	* implemented multiple [i]nsert and [a]ppend
+	* fixed undo of s operation: does only need one undo now
+	* fixed mantis bug #232: More problems with 'w' and 'cw' on word boundaries
+	* fixed mantis bug #230: backspace in character-replace mode ('r') backspaces instead of exiting
+	* fixed mantis bug #229: backspace in string-replace mode ('R') doesn't work
+	* fixed mantis bug #220: Word boundary definition around _ is wrong
+	* fixed mantis bug #208: "s" should replace the entire selection
+ 	* fixed mantis bug #197: Deleting last character in line leaves cursor past last character
+
+viPlugin 1.10.1
+===============
+
+2004-11-24
+
+	* fixed JDK 1.3 compatibility again (should work with WSAD 5.1 and Eclipse 2.1 again now)
+	* fixed mantis bug #224: can't move down with j under certain circumstances
+	* fixed mantis bug #215: multiple s (e.g. 3s) is not repeated correctly
+	
+viPlugin 1.10.0
+===============	
+	
+2004-10-25
+
+	* implemented FOTM#2: search and replace with buffer support
+	* implemented guu, gUU
+	* fixed mantis bug #193: ct<ESC> doesn't cancel
+	* fixed mantis bug #187: o and O do not use "Eclipse insert-new-line"
+	* fixed mantis bug #175: r^M should put the cursor on the next line
+	* fixed mantis bug #172: o and O don't work right with one line
+	* fixed mantis bug #148: o after last line doesn't moves cursor
+
+2004-10-22
+	
+	* added configuration option wordseperataros and fixed defaults (xml)
+	* implemented "wrapped" status message when searching
+	* fixed mantis bug #186: pasting leaves cursor in wrong position
+ 	* fixed mantis bug #183: r<ESC> leaves a funny character
+	* fixed mantis bug #180: cnw stops on '-' character regardless of size of n
+
+2004-10-07
+
+	* implemented multiple repetition (e.g. 4. - note that this is a dot :o)
+	* added configuration option undolevels (xml) and :set undolevels=integer
+	* implemented all gu[move], gU[move] and g~[move] commands now
+	* fixed mantis bug #176: "." seems to have stopped working in all cases
+	* fixed mantis bug #171: b, w, e don't handle _ and \ properly
+	* fixed mantis bug #143: "." command does not work with visual mode
+	* fixed mantis bug #126: viPlugin doesn't work together with MyEclipseIDE
+	* fixed mantis bug #120: u doesn't work correctly in some contexts
+
+2004-10-02
+
+	* implemented gu[move], gU[move] and g~[move]
+	* implemented '' to go to line before last jump
+	* fixed mantis bug #155: < is not repeatable with visual selection
+	* fixed mantis bug #153: V does not highlight entire line
+	* fixed mantis bug #129: ? followed by n moves in wrong direction
+
+2004-09-17
+
+	* Charlie Jones implemented connection of yank buffer to Eclipse clipboard
+	* implemented /<ENTER> and ?<ENTER> (repeat last search)
+	* implemented d<SPACE>, c<SPACE>, y<SPACE>
+	* implemented incremental search (and highlighting)
+	* added configuration option incsearch (xml), :set incsearch and :set noincsearch
+	* fixed mantis bug #156: dTx, dFx moved forward instead of backward
+	* fixed mantis bug #141: highlighting is not activated with * and #
+	* fixed mantis bug #127: :s and :%s should repeat last substitution
+	* fixed mantis bug #090: $/# go to start/end of line (with specific locale settings)
+
+2004-09-11
+
+	* updated User Manual to v1.4
+	* implemented highlighting of last search
+	* added configuration option hlsearch (xml), :set hlsearch and :set nohlsearch
+
+2004-09-07
+
+	* implemented CTRL-F, CTRL-B
+	* implemented zz, z-Enter
+	* implemented ZQ
+	* fixed mantis bug #144: moving to marked locations doesn't center screen on line
+	* fixed mantis bug #133: deleting to a reg expression doesn't always work e.g. d/)
+	* fixed mantis bug #118: viPlugin keyconfiguration disables standard configuration
+	* fixed mantis bug #105: CTRL-E and CTRL-Y only scrolls view but not the line
+
+2004-08-10
+
+	* implemented backward search (e.g. ?xxx)
+	* implement movement between open editors with :n, :p
+	* fixed mantis bug #121: fu, Fu, fq, Fq do not work (all other characters do)
+	* fixed mantis bug #117: % caused centering of line on screen when no matching brace was found
+	* fixed mantis bug #116: renaming classes with open editor caused viPlugin to crash Eclipse	
+
+2004-08-02
+
+	* implemented W, B, dW, dB, cW, cB, yW, yB
+	* fixed implementation of E, dE, cE, yE
+	* implemented :e! (revert to last save)
+	* fixed mantis bug #110: O doesn't work on last line
+	* fixed mantis bug #106: can't load plugin with configuration file in WSAD
+	* fixed mantis bug #101: visual mode: can't highlight last character in line
+
+2004-07-28
+
+	* updated User Manual to v1.3
+	* fixed mantis bug #112: Search and Replace via ':s/x/y/g' does not work
+	* fixed mantis bug #109: Modifying a file and closing editor
+	* fixed mantis bug #108: documentation bug
+	* fixed mantis bug #107: viPlugin hijacks eclipse forcing abrupt termination
+	* fixed mantis bug  #84: Repeated search positions cursor on end of word
+
+2004-07-25
+
+	* implemented y%, c%, d%, <%, >%
+	* duplicate entries are not saved in the command history anymore (e.g. :set, :set)
+	* implemented configuration via viplugin_rc.xml (more information in the user manual)
+	* implemented :set to show current preferences
+	* fixed mantis bug #100: J positions the cursor in the wrong spot
+	* fixed mantis bug  #95: F<char> followed by ; goes somewhere else sometimes
+	* fixed mantis bug  #81: implemented new configuration option expandtab
+	* fixed mantis bug  #70: >'a, <'a shift one line too much
+
+2004-07-20
+
+	* drastically improved performance for big files (>3000 lines)
+	* improved performance for multiple paste (e.g. 1000p)
+	* implemented _ command
+	* fixed H, M, L: move to first visible character
+	* fixed mantis bug #104: cw deletes too much in rare condition
+	* fixed mantis bug #103: +,-,ENTER,^ movement doesn't work correctly all times
+	
+2004-07-16
+
+	* fixed cursor position when switching back from insert mode
+	* fixed restoring original caret when disabling viplugin
+	* fixed exception with h,j,k,l in empty file
+	* fixed mantis bug #99: j/k after h/l throws off position on line sometimes
+	* fixed mantis bug #82: editor sometimes goes into the navtive editor mode when reusing editors
+	* fixed mantis bug #79 & 67: Backspace/Delete show up when repeating insert/replace mode changes
+
+2004-07-11
+
+	* fixed mantis bug #85: cursor in invalid position
+	* fixed mantis bug #37: cw needs 2u instead of u
+	* fixed mantis bug #36 & #91: cw doesn't work correctly on lineend
+	* fixed mantis bug #34: moving between lines loses cursor position
+
+2004-07-09
+
+	* implemented ygg, yG, cgg, cG, dgg, dG
+	* fixed mantis bug #53: v$ doesn't select last character
+	* fixed mantis bug #59: v doesn't select character on activation
+
+2004-07-07
+
+	* improved performance in replace mode
+	* implemented u (lowercase) and U (uppercase) in visual mode
+	* implemented V visual line mode
+	* fixed cursor position after redo
+	* fixed mantis bug #86: o, O, S, cc, dd don't work in empty file
+	* fixed mantis bug #77: . command without ever being in insert mode == NullPointerException
+
+2004-07-06
+
+	* implemented {, }, y{, y}, c{, c}, d{, d}
+	* fixed mantis bug #80: performance bad with big files in insert mode
+	* fixed mantis bug #78: :set throws exception
+	* fixed mantis bug #62: fixed cw command on whitespace character
+
+2004-07-03
+
+	* improved overall performance of viPlugin
+	* fixed mantis bug #73: J doesn't remove whitespace of joined file
+	* fixed mantis bug #68: J doesn't work with JDK 1.3
+	* fixed mantis bug #71: viPlugin is slow with big files
+
+2004-06-30
+
+	* implemented preferences service
+	* implemented preference "ignorecase", "shiftwidth", "vimcursor"
+	* fixed mantis bug #9: Undo doesn't put cursor in the same place
+
+2004-06-30
+
+	* implemented <'a, >'a
+	* fixed mantis bug #65: marks seems to have stopped working
+	* fixed mantis bug #63: O doesn't move cursor to newly create line
+	* fixed mantis bug #61: 'A' and 'a' command does not work
+	* fixed mantis bug #60: HOME and END keys do not work
+	* fixed mantis bug #55: using multiple eclipse windows
+	* fixed mantis bug #40: problems with different encodings in same file
+	* fixed mantis bug #25: undoing shift selection is not working correct
+
+2004-06-28
+
+	* fixed mantis bug #52: starting viPlugin (e.g. ctrl-shift-v) should automatically position the cursor at the current cursor position in the file 
+	* fixed mantis bug #51: scrolling in visual mode broken
+	* fixed mantis bug #42: f followed by ; stays on the first match
+	* fixed mantis bug #35: R command doesn't work
+	* fixed mantis bug #24: ArrayOutOfBoundsException when trying to 'dd' the last line
+
+2004-06-25
+
+	* reimplemented bookmark system (ma, 'a, d'a, c'a, y'a works now)
+	* fixed mantis bug #45: viPlugin crashes with 'Widget is disposed'
+	* fixed mantis bug #44: After a 'J' the cursor position is wrong
+	* fixed mantis bug #43: '5G' doesn't work
+	* fixed mantis bug #39: a at the end of a line starts insert in next line
+	* fixed mantis bug #38: A or a does nothing in an empty file
+	* fixed mantis bug #31: Visual mode doesn't work
+
+2004-06-23
+
+	* fixed mantis bug #33: J doesn't join next line to this line
+	* fixed mantis bug #30: A on an empty line starts inserting on the next line
+	* fixed mantis bug #26: jump to bracket match moves cursor to wrong char
+	* fixed cursor movement with arrow keys (left, right)
+
+2004-06-22
+
+	* fixed mantis bug #28: X deletes to the start of the line
+	* fixed mantis bug #21: n doesn't find the next occurrance after a *
+	* fixed mantis bug #19: vi stops working after editor switch
+	* fixed mantis bug #18: k over a closed fold jumps to top of file
+	* fixed mantis bug #17: On empty lines, dd deletes a little too much
+
+2004-06-20
+
+	* fixed mantis bug #10: >>, << doesn't work correctly
+	* fixed mantis bug #14: problems with ENTER key (e.g. :w)
+
+2004-06-18
+
+	* fixed bug that prevented viLayer to work with more than one open file
+	* fixed mantis bug #12: dw also deletes the \n if the word is at the end of the line
+	* fixed mantis bug #13: a performs the insert mode after the current character if at the end of the line
+
+2004-06-15
+
+	* h,l don't move to previous/next line (vim behaviour)
+	* fixed mantis bug #5: infinite loop when matching brace without counterpart
+	* fixed mantis bug #6: x doesn't delete previous character on lineend
+	* fixed mantis bug #8: search/replace is now undone in one step
+	
+2004-06-05
+
+	* Shortcut Ctrl+Shift+V activates/deactivates viPlugin
+	* show CommandBuffer in VisualMode
+	* fixed infinite recursion bug in search/replace
+	* implemented search/replace within selection (e.g. :s/search/replace)
+
+2004-06-01
+
+	* added square brackets as wordend
+
+2004-05-31
+
+	* fixed cursor placement when searching
+	* fixed b movement
+	* fixed ve, vw
+
+2004-05-29
+
+	* fixed MatchBrace again
+	* deleted/yanked text is copied to the eclipse clipboard
+	* fixed ye
+	* fixed Exception when closing a file with viPlugin activated
+	* refactored all tests to use a real workspace
+
+2004-05-28
+
+	* added +, - for vertical cursor movement
+	* fixed "." command with o,O
+	* fixed automatic CommandBuffer validation
+	* fixed Preferences page
+	* fixed de: delete to word end
+
+2004-05-26
+
+	* fixed cursor placement after leaving insert mode
+	* fixed visual mode
+
+2004-05-23
+
+	* fixed cursor movement with code folding enabled
+
+2004-05-21
+
+	* fixed yank/paste in different buffers
+	* added class TextUtils (split from TextModificator)
+	* moved much of TextModificator to MotionCommands
+	* fixed cursor positioning when changing case with ~
+
+2004-05-18
+
+	* fixed bug that didn't put changed text (e.g c, s) into yankbuffer
+	* fixed w command and added junit testcase for it
+
+2004-05-16
+
+	* "." repetition works with insert mode changes
+	* added replace mode (not fully working)
+	* works with JDK 1.3 again 
+
+
+2004-05-13
+
+	* implemented counter with undo
+	* whole bunch of refactorings done
+
+2004-05-04
+
+	* implemented named register (e.g. "ayy, "ap)
+	* some refactoring done
