@@ -7,8 +7,10 @@ var s = net.Server(function(socket){
     sockets.push(socket);
 
     socket.on('data', function(d){
-        for (var i = 0; i < sockets.length; i++)
+        for (var i = 0; i < sockets.length; i++){
+            if(sockets[i] == socket) continue;
             sockets[i].write(d);
+        }
     })
 
     socket.on('end', function(d){
@@ -17,4 +19,4 @@ var s = net.Server(function(socket){
     })
 })
 
-s.listen(8000, '0.0.0.0');
+s.listen(8000);
