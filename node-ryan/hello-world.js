@@ -1,4 +1,5 @@
-setTimeout(function(){
+setInterval(function(){
+// setTimeout(function(){
     console.log("world");
 }, 2000)
 
