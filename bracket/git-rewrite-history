@@ -1,0 +1,7 @@
+file:///usr/share/doc/git-1.7.3.4/user-manual.html#using-git-rebase
+
+git tag bad HEAD~3
+git co bad
+edit -> commit
+git commit --amend
+git rebase --onto HEAD bad develop
