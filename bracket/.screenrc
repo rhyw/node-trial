@@ -1,0 +1,21 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+
+#vbell off
+vbell off
+startup_message off
+autodetach on
+altscreen on
+nonblock on
+shelltitle "$ |bash"
+
+bind 'q' quit
+
+# Default screens
+chdir /home/yuwang/workspace/OSQA
+screen -t OSQA 1
+chdir /home/yuwang/Documents/bitbucket/light-tcms
+screen -t lighttcms 2
+chdir /home/yuwang
+screen -t ~ 0
