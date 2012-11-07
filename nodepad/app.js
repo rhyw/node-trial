@@ -8,7 +8,7 @@ var express = require('express'),
     stylus = require('stylus'),
     markdown = require('markdown').markdown,
     connectTimeout = require('connect-timeout'),
-    sys = require('sys'),
+    util = require('util'),
     path = require('path'),
     models = require('./models'),
     db,
@@ -22,7 +22,6 @@ function renderJadeFile(template, options) {
   var fn = jade.compile(template, options);
   return fn(options.locals);
 }
-
 
 emails = {
   send: function(template, mailOptions, templateOptions) {
@@ -40,7 +39,7 @@ emails = {
           mailOptions[k] = app.set('mailOptions')[k]
       }
 
-      console.log('[SENDING MAIL]', sys.inspect(mailOptions));
+      console.log('[SENDING MAIL]', util.inspect(mailOptions));
 
       // Only send mails in production
       if (app.settings.env == 'production') {
@@ -66,10 +65,16 @@ app.dynamicHelpers(require('./helpers.js').dynamicHelpers);
 app.configure('development', function() {
   app.set('db-uri', 'mongodb://localhost/nodepad-development');
   app.use(express.errorHandler({ dumpExceptions: true }));
+  app.set('view options', {
+    pretty: true
+  });
 });
 
 app.configure('test', function() {
   app.set('db-uri', 'mongodb://localhost/nodepad-test');
+  app.set('view options', {
+    pretty: true
+  });  
 });
 
 app.configure('production', function() {
@@ -157,7 +162,7 @@ function NotFound(msg) {
   Error.captureStackTrace(this, arguments.callee);
 }
 
-sys.inherits(NotFound, Error);
+util.inherits(NotFound, Error);
 
 app.get('/404', function(req, res) {
   throw new NotFound;
@@ -404,8 +409,9 @@ app.del('/sessions', loadUser, function(req, res) {
 // Search
 app.post('/search.:format?', loadUser, function(req, res) {
   Document.find({ user_id: req.currentUser.id, keywords: req.body.s },
-                [], { sort: ['title', 'descending'] },
                 function(err, documents) {
+    console.log(documents);
+    console.log(err);
     switch (req.params.format) {
       case 'json':
         res.send(documents.map(function(d) {
